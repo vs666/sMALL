@@ -27,9 +27,28 @@ for compression and decompression respectively
 ### In case of any issue please raise an issue on this repository
 
 ## 2. Modified Huffman Compression for text files
+Modified Text Compression
+This algorithm uses Run-Length-Encoding followed by Static-Huffman-Compression
+To install, goto Modified_Text_Compression
+then,
+```bash
+./setup.sh
+```
+To use :
+for options to use
+```bash
+small -h
+```
+for compression,
+```bash
+small -c [filename]
+```
 
-This code is not yet launched and is under production. This code will contain a stronger compression engine.
-It will use Burrow-Wheeler Transformation followed by Run-Length Encoding and then Huffman Compression.
+for decompression
+```bash
+small -d
+```
+
 
 ## 3. Arithmetic Compression for text files
 
