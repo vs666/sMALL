@@ -48,6 +48,9 @@ for decompression
 ```bash
 small -d
 ```
+### Further optimisation
+
+We can use Burrow_Wheeler_Transformation to optimise the code and make the maximum use of RLE modification before Huffman encoding. The corresponding implementation and updated version will be uploaded soon.
 
 
 ## 3. Arithmetic Compression for text files
@@ -55,3 +58,5 @@ small -d
 This code will use arithmetic compression, which is expected to have a better compression rate than huffman.
 Other than that, the basic structure of this application will be similar to that of Huffman.
 This code is also under production.
+
+
