@@ -52,6 +52,8 @@ small -d
 
 We can use Burrow_Wheeler_Transformation to optimise the code and make the maximum use of RLE modification before Huffman encoding. The corresponding implementation and updated version will be uploaded soon.
 
+In the mean time, Burrow Wheeler Transform code is added for understanding purpose.
+
 
 ## 3. Arithmetic Compression for text files
 
