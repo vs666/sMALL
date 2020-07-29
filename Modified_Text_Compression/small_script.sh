@@ -18,9 +18,9 @@ fi
 if [ $opt == '-c' ]
 then
     # code to compress the file
-    ./rle <<< $filename > ____op_file_tmp_101001.txt
+    /home/$USER/sMALL_v1.0/rle <<< $filename > ____op_file_tmp_101001.txt
     read -p 'Enter final filename (without extension) : ' finalfile
-    ./compress <<< $(echo "____op_file_tmp_101001.txt " $finalfile)
+    /home/$USER/sMALL_v1.0/compress <<< $(echo "____op_file_tmp_101001.txt " $finalfile)
     rm ____op_file_tmp_101001.txt
 else
 if [ $opt == '-d' ]
@@ -28,8 +28,8 @@ then
     read -p 'Enter the filename of the metadata file : ' metadataFilename
     read -p 'Enter the filename of the compressed file : ' compressedFilename
     read -p 'Enter the filename of the decompressed file : ' decFilename
-    ./decompress <<< $(echo $metadataFilename " " $compressedFilename " ___decompressed.txt")
-    ./rld > $decFilename <<< "___decompressed.txt"
+    /home/$USER/sMALL_v1.0/decompress <<< $(echo $metadataFilename " " $compressedFilename " ___decompressed.txt")
+    /home/$USER/sMALL_v1.0/rld > $decFilename <<< "___decompressed.txt"
     rm ___decompressed.txt
     # code to decompress the file
 fi
